@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -7,8 +7,9 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  background: rgba(0, 72, 63, 1);
+  font-family: "Ubuntu", sans-serif;
+  background: rgba(0, 10, 35, 1);
+
   color: rgba(255, 255, 255, 1);
 }
 
@@ -60,17 +61,17 @@ a {
   scale: 120%;
 }
 
-.q-d-header.is-open .q-d-header-background {
+.q-f-header.is-open .q-f-header-background {
   left: 0;
 }
-.q-d-header-button-wrapper {
+.q-f-header-button-wrapper {
   margin-left: auto;
 }
-.q-d-header-icon {
+.q-f-header-icon {
   display: none;
 }
 
-.q-d-header-icon-button {
+.q-f-header-icon-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,22 +79,22 @@ a {
   border: none;
   border-radius: 50%;
 }
-.q-d-navigation-list.is-open {
+.q-f-navigation-list.is-open {
   right: 0;
 }
-.q-d-header-icon-menu {
+.q-f-header-icon-menu {
   display: block;
 }
 
-.q-d-header-icon-button.is-open .q-d-header-icon-menu {
+.q-f-header-icon-button.is-open .q-f-header-icon-menu {
   display: none;
 }
 
-.q-d-header-icon-button.is-open .q-d-header-icon-close {
+.q-f-header-icon-button.is-open .q-f-header-icon-close {
   display: block;
 }
 
-.q-d-header {
+.q-f-header {
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -102,11 +103,12 @@ a {
   display: flex;
   height: 64px;
 }
-.q-d-title-img {
-  width: 92px;
-  height: 56px;
+.q-f-title-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
 }
-.q-d-header-background {
+.q-f-header-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -114,31 +116,31 @@ a {
   left: 100%;
   z-index: -1;
   transition: left 0.3s ease;
-  background: rgba(0, 72, 63, 1);
+  background: rgba(255, 255, 255, 1);
 }
-.q-d-header.is-open .q-d-header-background {
+.q-f-header.is-open .q-f-header-background {
   left: 0;
 }
-.q-d-header-button-wrapper {
+.q-f-header-button-wrapper {
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.q-d-header-icon-menu {
+.q-f-header-icon-menu {
   display: block;
 }
 
-.q-d-header-icon-button.is-open .q-d-header-icon-menu {
+.q-f-header-icon-button.is-open .q-f-header-icon-menu {
   display: none;
 }
 
-.q-d-header-icon-button.is-open .q-d-header-icon-close {
+.q-f-header-icon-button.is-open .q-f-header-icon-close {
   display: block;
 }
 
-.q-d-navigation {
+.q-f-navigation {
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -154,7 +156,7 @@ a {
   position: relative;
 }
 
-.q-d-navigation-list {
+.q-f-navigation-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -168,48 +170,47 @@ a {
   padding: 32px;
   border-radius: 0px 0px 20px 20px;
   gap: 28px;
-  background: rgba(0, 72, 63, 1);
+  background: rgba(255, 255, 255, 1);
 }
 
-.q-d-navigation-list.is-open {
+.q-f-navigation-list.is-open {
   right: 0;
 }
 
-.q-d-navigation-link {
-  font-family: Rounded Mplus 1c;
+.q-f-navigation-link {
   font-weight: 500;
   font-size: 20px;
 
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
 }
 
-.q-d-navigation-link:hover,
-.q-d-navigatioт-link:focus {
+.q-f-navigation-link:hover,
+.q-f-navigatioт-link:focus {
   font-weight: 800;
   font-size: 24px;
 }
 
-.q-d-header.is-open {
+.q-f-header.is-open {
   background-color: transparent;
 }
 
-.q-d-navigation-img {
+.q-f-navigation-img {
   display: none;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-navigation-img {
+@media screen and (min-width: 1209px) {
+  .q-f-navigation-img {
     display: flex;
-    width: 183px;
-    height: 112px;
+    width: 80px;
+    height: 80px;
   }
-  .q-d-policy-terms-header-icon-menu {
+  .q-f-policy-terms-header-icon-menu {
     display: none;
   }
 
-  .q-d-header {
+  .q-f-header {
     width: 100%;
     height: 108px;
     padding: 0px 0px 0px 0px;
@@ -217,16 +218,17 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    background: rgba(255, 255, 255, 1);
+    background: rgba(0, 10, 35, 0.75);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(49.79999923706055px);
   }
 
-  .q-d-header-background {
+  .q-f-header-background {
   }
-  .q-d-header-icon-button {
+  .q-f-header-icon-button {
     display: none;
   }
-  .q-d-navigation {
+  .q-f-navigation {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -235,7 +237,7 @@ a {
     margin: auto;
   }
 
-  .q-d-navigation-list {
+  .q-f-navigation-list {
     background-color: transparent;
     flex-direction: row;
     display: flex;
@@ -252,229 +254,260 @@ a {
     justify-content: center;
   }
 
-  .q-d-navigation-link {
-    font-family: Rounded Mplus 1c;
+  .q-f-navigation-link {
     font-weight: 500;
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
   }
 
-  .q-d-navigation-item-desk {
+  .q-f-navigation-item-desk {
     display: none;
   }
 }
-.q-d-home {
+.q-f-home {
   width: 375px;
-  height: 804px;
+  height: 810px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/home/Frame\ 294.png");
+  background-image: url("/img/home/Frame\ 288.png");
   margin: auto;
 }
-.q-d-home-container {
+.q-f-home-container {
   width: 375px;
-  padding: 331px 20px 0px;
+  padding: 178px 47px 0px;
   margin: auto;
 }
 
-.q-d-home-container-top {
+.q-f-home-container-top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.q-d-home-title {
-  font-family: Rounded Mplus 1c;
-  font-weight: 800;
-  font-size: 24px;
+.q-f-home-title {
+  width: 243px;
+  height: 166px;
+}
+
+.q-f-home-text {
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 20px;
   text-align: center;
-  padding: 0 45px 16px;
+  padding: 35px 0 16px;
 }
 
-.q-d-home-text {
-  font-family: Rounded Mplus 1c;
-  font-weight: 500;
-  font-size: 16px;
-  padding-top: 195px;
-}
-
-.q-d-home-google-button-image {
+.q-f-home-google-button-image {
   width: 208px;
   height: 54px;
 }
 
-.q-d-home-google-button-link:hover .q-d-home-google-button-image {
+.q-f-home-google-button-link:hover .q-f-home-google-button-image {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-home {
+@media screen and (min-width: 1209px) {
+  .q-f-home {
     width: 1440px;
-    height: 1024px;
-    background-image: url("/img/home/Frame\ 295.png");
+    height: 954px;
+    background-image: url("/img/home/Frame\ 289.png");
   }
-  .q-d-home-container {
+  .q-f-home-container {
     width: 1440px;
-    padding: 441px 192px 0px;
+    padding: 254px 192px 0px;
   }
-  .q-d-home-container-top {
+  .q-f-home-container-top {
     display: flex;
     flex-direction: column;
     align-items: start;
   }
 
-  .q-d-home-title {
-    font-family: Rounded Mplus 1c;
-    font-weight: 800;
-    font-size: 40px;
-    padding: 0 0 24px;
+  .q-f-home-title {
+    width: 445px;
+    height: 304px;
   }
 
-  .q-d-home-text {
-    font-family: Rounded Mplus 1c;
-    font-weight: 500;
-    font-size: 20px;
-    padding: 277px 0 0 480px;
+  .q-f-home-text {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: left;
+    width: 428px;
+    padding: 35px 0 24px;
   }
 }
 
-.q-d-about-container {
+.q-f-about-container {
   width: 375px;
-  padding: 49px 20px 0px;
+  padding: 78px 20px 0px;
   margin: auto;
 }
-.q-d-about-title {
-  font-family: Rounded Mplus 1c;
-  font-weight: 800;
+.q-f-about-title {
+  font-family: Ubuntu;
+  font-weight: 700;
   font-size: 20px;
   text-align: center;
 }
-.q-d-about-text {
-  font-family: Rounded Mplus 1c;
-  font-weight: 500;
+.q-f-about-text {
+  font-family: Ubuntu;
+  font-weight: 400;
   font-size: 16px;
-  padding-top: 24px;
-}
 
-@media screen and (min-width: 1208px) {
-  .q-d-about-container {
+  padding-top: 36px;
+}
+.q-f-about-img {
+  width: 336px;
+}
+@media screen and (min-width: 1209px) {
+  .q-f-about-container {
     width: 1440px;
-    padding: 109px 192px 0;
+    padding: 80px 208px 0;
+    position: relative;
   }
-  .q-d-about-title {
-    font-family: Rounded Mplus 1c;
-    font-weight: 800;
-    font-size: 40px;
+  .q-f-about-title {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-size: 36px;
     text-align: center;
   }
-  .q-d-about-text {
-    font-family: Rounded Mplus 1c;
-    font-weight: 500;
+  .q-f-about-text {
+    font-family: Ubuntu;
+    font-weight: 400;
     font-size: 20px;
+
+    width: 655px;
     padding-top: 40px;
+    text-align: left;
+  }
+  .q-f-about-img {
+    width: 526px;
+    position: absolute;
+    top: 23px;
+    right: 158px;
   }
 }
-.q-d-why-container {
+.q-f-why-container {
   margin: auto;
   width: 375px;
   padding: 80px 20px 0;
 }
-.q-d-why-list {
+.q-f-why-list {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 }
 
-.q-d-why-item {
+.q-f-why-item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
-.q-d-why-text-bold {
-  background: rgba(5, 99, 76, 1);
-  width: 31px;
-  height: 68px;
+.q-f-why-text-bold {
+  background: rgba(22, 48, 103, 1);
+  width: 30px;
+  height: 56px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Rounded Mplus 1c;
-  font-weight: 500;
+  font-family: Ubuntu;
+  font-weight: 400;
   font-size: 16px;
 }
 
-.q-d-why-text {
+.q-f-why-text {
   display: flex;
   align-items: center;
-  width: 285px;
+  width: 290px;
+  height: 56px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   padding: 10px;
-  height: 68px;
-  background: rgba(5, 99, 76, 1);
-  font-family: Rounded Mplus 1c;
-  font-weight: 500;
+  background: rgba(22, 48, 103, 1);
+  font-family: Ubuntu;
+  font-weight: 400;
   font-size: 16px;
 }
-
-@media screen and (min-width: 1208px) {
-  .q-d-why-container {
+.q-f-why-img {
+  display: none;
+}
+@media screen and (min-width: 1209px) {
+  .q-f-why-container {
     width: 1440px;
-    padding: 120px 414px 0;
+    padding: 120px 386px 0;
+    position: relative;
   }
-  .q-d-why-list {
+  .q-f-why-img {
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 1px;
+  }
+  .q-f-why-list {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
   }
 
-  .q-d-why-item {
+  .q-f-why-item {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: end;
+    gap: 16px;
   }
 
-  .q-d-why-text-bold {
-    width: 33px;
-    height: 50px;
-    font-family: Rounded Mplus 1c;
-    font-weight: 500;
-    font-size: 20px;
-  }
-
-  .q-d-why-text {
-    font-family: Rounded Mplus 1c;
-    font-weight: 500;
-    font-size: 20px;
-    width: 558px;
-    height: 50px;
+  .q-f-why-text-bold {
+    width: 32px;
+    height: 43px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 10px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 20px;
   }
-  .q-d-why-item-q {
-    height: 80px;
+
+  .q-f-why-text {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 43px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
   }
 }
 
-.q-d-reviews-container {
+.q-f-reviews-container {
   margin: auto;
   padding: 120px 20px 90px;
   width: 375px;
 }
-.q-d-reviews-list {
+.q-f-reviews-list {
   display: none;
 }
-.q-d-reviews-lists {
+.q-f-reviews-lists {
   padding-top: 24px;
   display: flex;
   gap: 24px;
   flex-direction: column;
 }
-.q-d-reviews-item {
+.q-f-reviews-item {
   color: rgba(0, 0, 0, 1);
   width: 336px;
   height: 204px;
@@ -484,41 +517,43 @@ a {
   padding-bottom: 24px;
   padding-left: 16px;
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(96, 149, 222, 1);
+  border: 1px solid rgba(97, 93, 136, 1);
   box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
-.q-d-reviews-img {
+.q-f-reviews-img {
   margin: auto;
 }
-.q-d-reviews-text-bold {
-  font-family: Rounded Mplus 1c;
-  font-weight: 800;
+.q-f-reviews-text-bold {
+  font-family: Ubuntu;
+  font-weight: 700;
   font-size: 16px;
+  text-align: center;
+
   padding: 10px 0 8px;
   text-align: center;
 }
 
-.q-d-reviews-text {
-  font-family: Rounded Mplus 1c;
+.q-f-reviews-text {
+  font-family: Ubuntu;
   font-weight: 400;
   font-size: 16px;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-reviews-container {
+@media screen and (min-width: 1209px) {
+  .q-f-reviews-container {
     margin: auto;
     padding: 120px 106px;
     width: 1440px;
   }
-  .q-d-reviews-list {
+  .q-f-reviews-list {
     display: block;
     padding: 40px 0 36px;
   }
-  .q-d-reviews-lists {
+  .q-f-reviews-lists {
     display: none;
   }
-  .q-d-reviews-item {
+  .q-f-reviews-item {
     width: 289px;
     height: 251px;
     padding-top: 24px;
@@ -528,94 +563,88 @@ a {
     margin: 10px;
   }
 
-  .q-d-reviews-img {
+  .q-f-reviews-img {
     margin: auto;
   }
-  .q-d-reviews-text-bold {
-    font-family: Rounded Mplus 1c;
+  .q-f-reviews-text-bold {
     font-weight: 800;
     font-size: 20px;
     text-align: center;
   }
 
-  .q-d-reviews-text {
-    font-family: Rounded Mplus 1c;
+  .q-f-reviews-text {
     font-weight: 400;
     font-size: 20px;
   }
 }
 
-.q-d-faq-container {
+.q-f-faq-container {
   padding: 80px 20px 0px;
   width: 375px;
   margin: auto;
 }
-.q-d-faq-list {
+.q-f-faq-list {
   padding-top: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.q-d-faq-item {
-  background: rgba(5, 99, 76, 1);
+.q-f-faq-item {
+  background: rgba(97, 93, 136, 1);
   box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.25);
 
-  padding: 24px;
+  border-radius: 16px;
+  padding: 14px;
 }
 
-.q-d-faq-question {
+.q-f-faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Rounded Mplus 1c;
-  font-weight: 700;
+  font-family: Ubuntu;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.q-d-faq-answer {
+.q-f-faq-answer {
   display: none;
   padding-top: 16px;
-  font-family: Rounded Mplus 1c;
+  font-family: Ubuntu;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
 }
-.q-d-toggle-button {
+.q-f-toggle-button {
   background: none;
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 1208px) {
-  .q-d-faq-container {
+@media screen and (min-width: 1209px) {
+  .q-f-faq-container {
     padding: 120px 356px 0;
     width: 1440px;
     margin: auto;
   }
-  .q-d-faq-list {
+  .q-f-faq-list {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
   }
 
-  .q-d-faq-item {
-    background: rgba(5, 99, 76, 1);
-    box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.25);
-
-    padding: 24px;
-  }
-
-  .q-d-faq-question {
+  .q-f-faq-question {
+    font-family: Ubuntu;
+    font-weight: 600;
     font-size: 20px;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .q-d-faq-answer {
-    font-family: Rounded Mplus 1c;
+  .q-f-faq-answer {
+    font-family: Ubuntu;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -623,27 +652,28 @@ a {
   }
 }
 
-.q-d-gallery-container {
+.q-f-gallery-container {
   width: 375px;
   margin: auto;
   padding: 80px 20px 0;
 }
-.q-d-gallery-list {
+.q-f-gallery-list {
   width: auto;
   padding-top: 24px;
   margin: auto;
 }
 
-.q-d-gallery-item {
-  width: 336px;
-  height: 596.6725463867188px;
+.q-f-gallery-item {
+  width: 241px;
+  height: 429px;
+  border-radius: 20px;
 
   overflow: hidden;
   position: relative;
   margin: 0 10px;
 }
 
-.q-d-gallery-image {
+.q-f-gallery-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -657,15 +687,16 @@ a {
 
 .slick-dots li {
   list-style: none;
-  width: 14px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100px;
 }
 
 .slick-dots li button {
   width: 100%;
   height: 100%;
   border: none;
-  background: url("/img/gallery/Rectangle\ 12.png") no-repeat center/cover;
+  background: url("/img/gallery/Ellipse\ 2.png") no-repeat center/cover;
   padding: 0;
   font-size: 0;
 }
@@ -675,213 +706,219 @@ a {
 }
 
 .slick-dots li.slick-active button {
-  background: url("/img/gallery/Rectangle\ 13\ \(1\).png") no-repeat
-    center/cover;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.25);
+  border-radius: 100px;
+  background: url("/img/gallery/Ellipse\ 2.png") no-repeat center/cover;
 }
-@media screen and (min-width: 1208px) {
-  .q-d-gallery-container {
+@media screen and (min-width: 1209px) {
+  .q-f-gallery-container {
     width: 1440px;
     margin: auto;
     padding: 120px 0 0;
   }
-  .q-d-gallery-item {
-    width: 242px;
-    height: 430px;
+  .q-f-gallery-item {
+    width: 394px;
+    height: 701px;
+    border-radius: 20px;
 
     margin: 0 10px;
   }
 
-  .q-d-gallery-list {
-    height: 602px;
+  .q-f-gallery-list {
     padding: 0;
-    margin: 40px 0 36px;
-  }
-  .q-d-gallery-list .slick-slide {
-    width: 242px;
-    height: 430px;
-
-    transition: transform 0.6s ease-in-out, width 0.6s ease-in-out,
-      height 0.6s ease-in-out;
-  }
-
-  .q-d-gallery-list .slick-slide.slick-center {
-    width: 339px;
-    height: 602px;
-
-    z-index: 2;
+    margin: 40px 0 0px;
   }
 }
 
-.q-d-features-container {
+.q-f-features-container {
   width: 375px;
   margin: auto;
-  padding: 80px 20px 0px;
-}
-.q-d-features-div {
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.q-d-features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 75px 48px 0px;
 }
 
-.q-d-features-item {
+.q-f-features-list {
+  margin-top: 24px;
+  padding-left: 10px;
   display: flex;
+  flex-direction: column;
   gap: 20px;
+  width: 300px;
+  height: 960px;
+  background: url("/img/Group\ 7.png") no-repeat center/cover;
+}
+
+.q-f-features-item {
+  width: 220px;
+  height: 220px;
+  padding-top: 109px;
+  padding-right: 27px;
+  padding-bottom: 109px;
+  padding-left: 27px;
+  display: flex;
   align-items: center;
-}
-
-.q-d-features-text {
-  font-family: Rounded Mplus 1c;
-  font-weight: 500;
+  justify-content: center;
+  font-family: Ubuntu;
+  font-weight: 400;
   font-size: 16px;
+
+  text-align: center;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-features-container {
+.q-f-features-text {
+  margin-left: 60px;
+}
+
+@media screen and (min-width: 1209px) {
+  .q-f-features-container {
     width: 1440px;
     margin: auto;
-    padding: 120px 159px 0;
+    padding: 120px 108px 0;
   }
-  .q-d-features-div {
-    padding-top: 40px;
+  .q-f-features-list {
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 63px;
-  }
-  .q-d-features-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 548px;
+    flex-direction: row;
+    gap: 24px;
+    width: 1244px;
+    height: 408px;
+    background: url("/img/Group\ 3.png") no-repeat center/cover;
   }
 
-  .q-d-features-text {
-    font-family: Rounded Mplus 1c;
-    font-weight: 500;
+  .q-f-features-item {
+    width: 288px;
+    height: 288px;
+    padding-top: 109px;
+    padding-right: 27px;
+    padding-bottom: 109px;
+    padding-left: 27px;
+    font-family: Ubuntu;
+    font-weight: 400;
     font-size: 20px;
+    text-align: center;
+  }
+
+  .q-f-features-text {
+    margin-left: 0px;
+    margin-top: 80px;
   }
 }
 
-.q-d-policy-terms-container {
+.q-f-policy-terms-container {
   padding: 124px 16px 40px;
   width: 375px;
   margin: auto;
-
+  font-family: Ubuntu;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.q-d-policy-terms-title {
-  font-weight: 800;
+.q-f-policy-terms-title {
+  font-family: Ubuntu;
+  font-weight: 700;
   font-size: 24px;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
 }
 
-.q-d-policy-terms-text {
+.q-f-policy-terms-text {
   padding-top: 20px;
-
-  font-weight: 600;
+  font-family: Ubuntu;
+  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.q-d-policy-terms-texts {
+.q-f-policy-terms-texts {
   padding-top: 8px;
 }
 
-.q-d-policy-terms-text-one {
+.q-f-policy-terms-text-one {
   padding-top: 20px;
 }
 
-.q-d-terms-list {
+.q-f-terms-list {
   list-style-type: disc;
   padding: 20px 0 20px 25px;
   display: flex;
   flex-direction: column;
 }
 
-.q-d-terms-lists {
+.q-f-terms-lists {
   list-style-type: disc;
   padding-left: 25px;
 }
 
-.q-d-email-link {
+.q-f-email-link {
   color: inherit;
   text-decoration: none;
 }
 
-.q-d-email-link-color {
+.q-f-email-link-color {
   color: inherit;
   text-decoration: none;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-policy-terms-container {
+@media screen and (min-width: 1209px) {
+  .q-f-policy-terms-container {
     padding: 188px 108px 60px;
     width: 1440px;
-    font-family: Rounded Mplus 1c;
+    font-family: Ubuntu;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .q-d-policy-terms-title {
-    font-weight: 800;
+  .q-f-policy-terms-title {
+    font-family: Ubuntu;
+    font-weight: 700;
     font-size: 36px;
     line-height: 22px;
     letter-spacing: 0%;
     text-align: center;
   }
 
-  .q-d-policy-terms-text {
-    font-family: Rounded Mplus 1c;
-    font-weight: 800;
+  .q-f-policy-terms-text {
+    font-family: Ubuntu;
+    font-weight: 700;
     font-size: 24px;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .q-d-policy-terms-text-one {
+  .q-f-policy-terms-text-one {
     padding-top: 30px;
   }
 
-  .q-d-terms-list {
+  .q-f-terms-list {
     padding: 20px 0 20px 25px;
   }
 }
 
-.q-d-footer-container {
+.q-f-footer-container {
   width: 375px;
-  padding: 24px 0;
+  padding: 24px 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 30px;
-  color: rgba(0, 0, 0, 1);
 }
 
-.q-d-footer-wrapper {
+.q-f-footer-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
 }
 
-.q-d-footer-text {
+.q-f-footer-text {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
@@ -895,29 +932,28 @@ a {
   text-decoration-skip-ink: auto;
 }
 
-.q-d-footer-copyright {
+.q-f-footer-copyright {
   font-weight: 700;
   font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
+
   text-align: center;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-footer-container {
+@media screen and (min-width: 1209px) {
+  .q-f-footer-container {
     width: 1440px;
     padding: 25px 0 42px;
+    align-items: center;
     gap: 24px;
   }
 
-  .q-d-footer-wrapper {
+  .q-f-footer-wrapper {
     display: flex;
     flex-direction: row;
     gap: 19px;
   }
 
-  .q-d-footer-text {
-    font-family: Rounded Mplus 1c;
+  .q-f-footer-text {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -929,8 +965,7 @@ a {
     text-decoration-skip-ink: auto;
   }
 
-  .q-d-footer-copyright {
-    font-family: Rounded Mplus 1c;
+  .q-f-footer-copyright {
     font-weight: 800;
     font-size: 20px;
     line-height: 150%;
@@ -938,19 +973,22 @@ a {
   }
 }
 
-.q-d-cookie-popup {
+.q-f-cookie-popup {
   position: fixed;
   bottom: 10px;
   width: 375px;
   padding: 28px;
-  background: rgba(5, 99, 76, 1);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 60px 0px rgba(255, 255, 255, 0.15) inset;
+
+  backdrop-filter: blur(100px);
 
   z-index: 1000;
   display: none;
 }
 
-.q-d-cookie-popup-text-two {
-  font-family: Rounded Mplus 1c;
+.q-f-cookie-popup-text-two {
+  font-family: Ubuntu;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -959,7 +997,7 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
-.q-d-cookie-button-container {
+.q-f-cookie-button-container {
   padding: 30px 0 0;
   margin: auto;
   display: flex;
@@ -969,7 +1007,7 @@ a {
   gap: 20px;
 }
 
-.q-d-cookie-button {
+.q-f-cookie-button {
   border: none;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 1);
@@ -978,7 +1016,6 @@ a {
   border-radius: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-family: Rounded Mplus 1c;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -991,7 +1028,7 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-.q-d-close-popup {
+.q-f-close-popup {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -999,9 +1036,8 @@ a {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1208px) {
-  .q-d-cookie-popup-text-two {
-    font-family: Rounded Mplus 1c;
+@media screen and (min-width: 1209px) {
+  .q-f-cookie-popup-text-two {
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
@@ -1009,14 +1045,14 @@ a {
     text-align: center;
   }
 
-  .q-d-cookie-button-container {
+  .q-f-cookie-button-container {
     margin: auto;
     display: flex;
     flex-direction: row;
     gap: 40px;
   }
 
-  .q-d-cookie-popup {
+  .q-f-cookie-popup {
     position: fixed;
     bottom: 10px;
     width: 1440px;
